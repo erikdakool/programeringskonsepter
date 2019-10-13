@@ -1,0 +1,16 @@
+//polyline.proto
+syntax = "proto3";
+
+message Square {
+  int32 x = 1;
+}
+
+message Board {
+  string Description = 2;
+  repeated Square squares = 3;
+}
+
+message Boards{
+  string Title = 4;
+  repeated Board boards = 5;
+}
